@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kanban">
+        <div class="column" id="todo" data-status="To do">
+            <h2>To do</h2>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" id="inprogress" data-status="In progress">
+            <h2>In progress (Max 3)</h2>
+            <div class="cards-container"></div>
+        </div>
+        <div class="column" id="done" data-status="Done">
+            <h2>Done</h2>
+            <div class="cards-container"></div>
+        </div>
+    </div>
+    <script src="kanban.js" defer></script>
+</body>
+</html>

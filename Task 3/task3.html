@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="char-form" novalidate>
+        <div>
+            <label>Character Name:</label>
+            <input type="text" id="char-name" required>
+            <span class="error" id="name-error"></span>
+        </div>
+        <div>
+            <label>Strength (1-10):</label>
+            <input type="number" id="strength" value="5" min="1" max="10">
+        </div>
+        <div>
+            <label>Agility (1-10):</label>
+            <input type="number" id="agility" value="5" min="1" max="10">
+        </div>
+        <p>Points Remaining (Total must be 20): <span id="points-left">10</span></p>
+        <button type="submit" id="submit-btn">Create Character</button>
+    </form>
+    <script src="form.js" defer></script>
+</body>
+</html>
